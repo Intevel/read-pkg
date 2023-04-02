@@ -31,7 +31,7 @@ type Package struct {
 	PeerDependencies map[string]string `json:"peerDependencies"`
 }
 
-func parsePackage() Package {
+func ParsePackage() Package {
 	file, err := os.Open("package.json")
     if err != nil {
         log.Fatal(err)
